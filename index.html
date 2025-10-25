@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Course Registration Form</h1>
+
+    <form style="width: 500px;" action="https://shreyasm12.github.io/Course-Registration-Form-5/thank.html">
+        <!--width for border-->
+        <fieldset><!--box-->
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td><label for="first name">First Name</label></td>
+                    <td><input type="text" placeholder="Eg:Shreyas" maxlength="25" minlength="2" required><br></td>
+                </tr>
+                <tr>
+                    <td><label for="last name">Last Name</label></td>
+                    <td> <input type="text" placeholder="Eg:Gowda or M" minlength="1" required><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Mobile Number</label></td>
+                    <td><input type="tel" placeholder="Eg:9988776655" required><br></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email" placeholder="Eg:abc@gmail.com" required><br></td>
+                </tr>
+                <tr>
+
+                    <td> <label for="">Password</label></td>
+                    <td><input type="password" name="" id="" placeholder="min 5 Character" required><br></td>
+                </tr>
+                <tr>
+                    <td><label for="">Confirm Password</label></td>
+                    <td><input type="password" placeholder="min 5 Character" required><br></td>
+                </tr>
+                <tr>
+                    <td><label for="">DOB</label></td>
+                    <td><input type="date" required><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="gender">Gender</label></td>
+                    <td><input name="gender" type="radio" value="Male"
+                            required><label>Male</label><!--same name for 3 radio option-->
+                        <input name="gender" type="radio"
+                            value="Female"><label>Female</label><!--compulsatoryy give the value attribute foe select,checkbox,dropdown,radio for backend prepares or for backend help-->
+                        <input name="gender" type="radio" value="Custom"><label>Custom</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Select Country</label></td>
+                    <td><select name="" id="">
+                            <option value="">Select Country</option>
+                            <!--compulsatoryy give the value attribute foe select,checkbox,dropdown,radio for backend prepares or for backend help-->
+                            <option value="INDIA">INDIA</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                        </select><br></td>
+                </tr>
+                <tr>
+                    <td><label for="pic">Upload Picture</label></td>
+                    <td> <input type="file" multiple><br> <!--select multiple file more than 1--></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <input type="reset"><br>
+        <br>
+
+        <fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <tr>
+                    <td> <label for="">Select Course</label></td>
+                    <td><select name="" id="">
+                            <option value="">Java Full Stack</option>
+                            <option value="">Python Full Stack</option>
+                            <option value="">Mern Full Stack</option>
+                        </select><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="Deli">Delivery Mode</label></td>
+                    <td><input type="checkbox" value="Online"><label for="">Online</label>
+                        <input type="checkbox" value="Offline"><label for="">Offline</label><br>
+                    </td>
+                </tr>
+                <label for="">Comments</label><br>
+
+                </tr>
+                <textarea style="resize: none;" name="feedback" id="" rows="4" cols="40"></textarea>
+            </table>
+        </fieldset>
+
+        <input type="reset">
+        <button>
+            <center>Submit</center>
+        </button>
+
+
+
+
+
+    </form>
+</body>
+
+</html>
